@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trabajador">
+
+    <TextView
+        android:id="@+id/tv_usert"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/etUsuario"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:onClick="lugar_de_vacunacion"
+        android:text="@string/btlugvacuna"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usert" />
+
+    <TextView
+        android:id="@+id/tv_lugar"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/vacio"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usert" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="personas_a_vacunar"
+        android:text="@string/btnumero"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lugar" />
+
+    <TextView
+        android:id="@+id/tv_numero"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/tvpasientestotal"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lugar" />
+
+    <EditText
+        android:id="@+id/et_cedula2"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/etdato1"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_expli" />
+
+    <EditText
+        android:id="@+id/et_vacuna"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/etdato2"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cedula2" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:onClick="confirmacion_de_vacunacion"
+        android:text="@string/btconfir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_vacuna" />
+
+    <TextView
+        android:id="@+id/tv_expli"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tvconfir"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_numero" />
+
+    <EditText
+        android:id="@+id/et_desde"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/etdesde"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/et_hasta"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/ethasta"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/et_desde"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/tvperiodovacunacion"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:onClick="personas_vacunadas_en_un_periodo_de_tiempo"
+        android:text="@string/btcalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_desde" />
+
+    <TextView
+        android:id="@+id/tv_nvacunados"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/vacio"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/et_hasta" />
+
+    <TextView
+        android:id="@+id/tv_pashoy"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/tvpasienteshoy"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_numero"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lugar" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="barlistar"
+        android:text="@string/btinfopas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+</androidx.constraintlayout.widget.ConstraintLayout>

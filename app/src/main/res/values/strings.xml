@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">COVIDAPP</string>
+    <string name="etUsuario">Usuario</string>
+    <string name="etPassword">Password</string>
+    <string name="btIniciar">Ingresar</string>
+    <string name="regis">registrarse</string>
+    <string name="etnombre">Nombre</string>
+    <string name="etapellido">Apellido</string>
+    <string name="etcedula">Cedula</string>
+    <string name="etcelular">Celular</string>
+    <string name="etedad">fecha nacimiento (yyyy-MM-dd)</string>
+    <string name="btregis">Registrarme</string>
+    <string name="r1">Pasiente</string>
+    <string name="r2">Trabajador de salud</string>
+    <string name="r3">Representante de salud</string>
+    <string name="etciudadmuni">ciudad/municipio</string>
+    <string-array name="pobla_a_la_que_pertenece">
+        <item>sector al que perteneces</item>
+        <item>f1: salud en primera linea</item>
+        <item>f1: pers. de apoyo asistencial</item>
+        <item>f1: pers. de servi. generales y adminis.</item>
+        <item>f1: pers. mayores de 80 años</item>
+        <item>f2: salud no de primera linea</item>
+        <item>f2: adultos entre 60 y 69 años</item>
+        <item>f3: profesores, militares, policias</item>
+        <item>f3: pers. entre 16 y 59 años con comorbilidades</item>
+        <item>f4: madres comunitarias</item>
+        <item>f4: cuidadores institucionales</item>
+        <item>f5: pers. entre 15 y 59 años sin comorbilidades</item>
+    </string-array>
+    <string name="btface">fase de vacunacion</string>
+    <string name="btagendar">agendar cita</string>
+    <string name="vacio"></string>
+    <string name="btlugvacuna">lugar de vacunacion</string>
+    <string name="tvfecha">Fecha vacunacion</string>
+    <string name="btnumero">numero pasientes</string>
+    <string name="tvconfir">Ingrese datos de persona vacunada</string>
+    <string name="etdato1">Cedula de persona vacunada</string>
+    <string name="etdato2">1 si es primera 2 si es la segunda</string>
+    <string name="btconfir">Ingresar vacunado</string>
+    <string name="tvperiodovacunacion">Ingrese un periodo de tiempo para confirmar vacunados</string>
+    <string name="etdesde">desde (año-mes-dia)</string>
+    <string name="ethasta">hasta (año-mes-dia)</string>
+    <string name="btcalcular">Calcular</string>
+    <string name="btingrevacuans">Ingresar</string>
+    <string name="etnvavcunas">Numero de vacunas</string>
+    <string name="btconsultar">Consultar</string>
+    <string name="tvingresarvacunas">Ingresa el numero de vacunas disponibles</string>
+    <string name="tvconsulta1">Consultar paceintes sin vacunar por fase</string>
+    <string name="tvconsulta2">Consultar pacientes segunda dosis por vacunar</string>
+    <string name="tvconsulta3">Consultar pacientes vacunados</string>
+    <string name="etcita">Mes y dia que desea la cita (MM-DD)</string>
+    <string name="tvadvertencia">digitar una fecha valida y posterior a hoy</string>
+    <string name="btverrcita">Ver cita</string>
+    <string name="etmsintomas">Diligencia todos los sintomas que posee, antes o despues de su vacunacion para comunicarse con un doctor</string>
+    <string name="btenviar">Enviar</string>
+    <string name="etcorreo">Correo</string>
+    <string name="btasigdoc">ASIG.DOC</string>
+    <string name="tvdoctor">Doctor asignado</string>
+    <string name="tvpasientestotal">TOTAL</string>
+    <string name="tvpasienteshoy">HOY</string>
+    <string name="btinfopas">Ver informacion de mis pacientes</string>
+</resources>
